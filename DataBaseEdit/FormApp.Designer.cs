@@ -1,6 +1,6 @@
 ﻿namespace DataBaseEdit
 {
-    partial class Form1
+    partial class FormApp
     {
         /// <summary>
         /// Required designer variable.
@@ -61,6 +61,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.buttonExport = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.openFileDialogDirect = new System.Windows.Forms.OpenFileDialog();
             this.GroupBoxBk.SuspendLayout();
             this.groupBoxSetting.SuspendLayout();
             this.groupBoxColumnEdit.SuspendLayout();
@@ -85,12 +86,14 @@
             // 
             // buttonBackUp
             // 
+            this.buttonBackUp.Enabled = false;
             this.buttonBackUp.Location = new System.Drawing.Point(76, 263);
             this.buttonBackUp.Name = "buttonBackUp";
             this.buttonBackUp.Size = new System.Drawing.Size(236, 110);
             this.buttonBackUp.TabIndex = 4;
             this.buttonBackUp.Text = "Gerar BackUp";
             this.buttonBackUp.UseVisualStyleBackColor = true;
+            this.buttonBackUp.Click += new System.EventHandler(this.buttonBackUp_Click);
             // 
             // buttonDirectory
             // 
@@ -101,7 +104,7 @@
             this.buttonDirectory.TabIndex = 3;
             this.buttonDirectory.Text = "...";
             this.buttonDirectory.UseVisualStyleBackColor = true;
-
+            this.buttonDirectory.Click += new System.EventHandler(this.buttonDirectory_Click);
             // 
             // labelArc
             // 
@@ -139,7 +142,6 @@
             this.label1.Size = new System.Drawing.Size(117, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "Novo Produto";
-
             // 
             // groupBoxSetting
             // 
@@ -185,7 +187,6 @@
             this.groupBoxColumnEdit.TabStop = false;
             this.groupBoxColumnEdit.Text = "Modificar Coluna";
             this.groupBoxColumnEdit.Visible = false;
-
             // 
             // groupBoxListInfo
             // 
@@ -240,7 +241,6 @@
             this.textBoxEditColumn.Name = "textBoxEditColumn";
             this.textBoxEditColumn.Size = new System.Drawing.Size(415, 26);
             this.textBoxEditColumn.TabIndex = 10;
-
             // 
             // labelInformaçãoColumn
             // 
@@ -251,7 +251,6 @@
             this.labelInformaçãoColumn.Size = new System.Drawing.Size(156, 20);
             this.labelInformaçãoColumn.TabIndex = 7;
             this.labelInformaçãoColumn.Text = "Inserir Informação";
-
             // 
             // comboBoxSelectColumn
             // 
@@ -313,7 +312,6 @@
             this.labelFtColor.Size = new System.Drawing.Size(99, 20);
             this.labelFtColor.TabIndex = 11;
             this.labelFtColor.Text = "Front Color";
-
             // 
             // labelPnPhone
             // 
@@ -391,7 +389,6 @@
             this.buttonExport.TabIndex = 5;
             this.buttonExport.Text = "Export";
             this.buttonExport.UseVisualStyleBackColor = true;
-
             // 
             // textBox2
             // 
@@ -400,14 +397,14 @@
             this.textBox2.Size = new System.Drawing.Size(415, 26);
             this.textBox2.TabIndex = 6;
             // 
-            // Form1
+            // FormApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1568, 590);
             this.Controls.Add(this.groupBoxSetting);
             this.Controls.Add(this.GroupBoxBk);
-            this.Name = "Form1";
+            this.Name = "FormApp";
             this.Text = "Form1";
             this.GroupBoxBk.ResumeLayout(false);
             this.GroupBoxBk.PerformLayout();
@@ -429,7 +426,6 @@
         private System.Windows.Forms.Button buttonBackUp;
         private System.Windows.Forms.Button buttonDirectory;
         private System.Windows.Forms.Label labelArc;
-        private System.Windows.Forms.TextBox textBoxDirectory;
         private System.Windows.Forms.Label labelUser;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label1;
@@ -458,6 +454,8 @@
         private System.Windows.Forms.Label labelProductSltLine;
         private System.Windows.Forms.GroupBox groupBoxListInfo;
         private System.Windows.Forms.DataGridView dataGridViewExcelExport;
+        private System.Windows.Forms.OpenFileDialog openFileDialogDirect;
+        public System.Windows.Forms.TextBox textBoxDirectory;
     }
 }
 
