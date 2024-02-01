@@ -401,9 +401,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1568, 590);
             this.Controls.Add(this.groupBoxSetting);
             this.Controls.Add(this.GroupBoxBk);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormApp";
             this.Text = "Form1";
             this.GroupBoxBk.ResumeLayout(false);

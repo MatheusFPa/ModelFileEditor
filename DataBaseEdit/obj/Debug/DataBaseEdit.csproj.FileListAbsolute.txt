@@ -11,8 +11,8 @@ C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.exe
 C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.pdb
 C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\bin\Debug\DataBaseEdit.exe
 C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\bin\Debug\DataBaseEdit.pdb
-C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.csprojResolveAssemblyReference.cache
 C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.Properties.Resources.resources
 C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.csproj.GenerateResource.Cache
 C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.FormApp.resources
 C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.FormUser.resources
+C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.csprojResolveAssemblyReference.cache

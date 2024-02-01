@@ -13,14 +13,18 @@ namespace DataBaseEdit
 {
     public partial class FormApp : Form
     {
+
         Actions act;
         private static FormApp INSTANCE = null;
+
+        FormUser frmUser;
 
         public FormApp()
         {
             INSTANCE = this;
             InitializeComponent();
             ClassInit();
+            frmUser.Show();
         }
         public static FormApp getInstance()
         {
@@ -32,6 +36,7 @@ namespace DataBaseEdit
         private void ClassInit()
         {
             act = new Actions();
+            frmUser = new FormUser();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
