@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DataBaseEdit
 {
     public partial class FormUser : Form
     {
+        FormApp frmApp = FormApp.getInstance();
         public FormUser()
         {
             InitializeComponent();
@@ -20,32 +14,23 @@ namespace DataBaseEdit
 
         private void buttonUserEnter_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void EnableButton()
-        {
-            if (textBoxUser.Text.Length >= 5)
+            if(textBoxUser.Text.Length == 8)
             {
-                buttonUserEnter.Enabled = true;
-                labelStatusUser.Text = "usuario ok";
+                frmApp.Show();
+                this.Hide();
             }
-
             else
-                labelStatusUser.Text = "Usuário Inválido, \nMínimo 5 caracteres";
+            {
+                MessageBox.Show("Usuário Inválido");
+                textBoxUser.Text = "";
+            }
         }
-
-        private void textBoxUser_TextChanged(object sender, EventArgs e)
-        {
-            EnableButton();
-        }
-
         private void data()
         {
 
             DateTime today = DateTime.Today;
-            
-            textBoxData.Text = today.ToString("yyyyMMdd"); 
+
+            textBoxData.Text = today.ToString("yyyyMMdd");
         }
     }
 }

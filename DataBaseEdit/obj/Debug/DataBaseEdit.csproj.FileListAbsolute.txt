@@ -15,4 +15,3 @@ C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.Properti
 C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.csproj.GenerateResource.Cache
 C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.FormApp.resources
 C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.FormUser.resources
-C:\DevelopmentProjects\DataBaseEdit\DataBaseEdit\obj\Debug\DataBaseEdit.csprojResolveAssemblyReference.cache
